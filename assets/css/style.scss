@@ -192,11 +192,22 @@ body {
 		padding-top: 10px;
 		padding-bottom: 10px;
 
-		span#menu-icon {
-			display: block;
-			text-align: center;
-			text-decoration: none;
-			cursor: default;
+		div#mobileMenu{
+			display: flex;
+
+			span#title {
+				width: 100%;
+				display: inline-block;
+				text-align: center;
+				text-decoration: none;
+				margin-left: -30px;
+			}
+
+			img#menuIcon {
+				display: inline-block;
+				height: 20px;
+				margin-left: 10px;
+			}
 		}
 		
 		ul#topList {
@@ -227,7 +238,7 @@ body {
 		&:hover {
 			padding-bottom: 5px;
 			
-			& > span#menu-icon {
+			& > div#mobileMenu > span#title {
 				padding-bottom: 10px;
 				border-bottom: $border;
 			}
@@ -362,7 +373,7 @@ body {
 			}
 		}
 		
-		span#menu-icon {
+		div#mobileMenu {
 			display: none;
 		}
 	}
